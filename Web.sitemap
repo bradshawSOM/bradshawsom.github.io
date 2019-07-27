@@ -5,8 +5,8 @@
                metaDescription="Driving lessons from one of the most experienced instructors in Bolton at ##SiteName##. Stephen Haslam DSA approved driving school instructor in Bolton, Bradshaw, Harwood and the surrounding areas.">
     
       <siteMapNode key="my-services" url="~/service.aspx" rewriteToUrl="~/service.aspx" title="My Servcies" 
-                   metaKeywords="bolton driving lessons, bradshaw driving lessons, driving instructor, driving lesson, theory test, pass plus, practical driving test, cheap driving lessons, driving instructor, driving instructor training, confidence, one hour lesson, two hour lesson, bradshaw, harwood, tottington, bromley cross, astley bridge, halliwell, breightmet" 
-                   metaDescription="##SiteName## your local driving school in Bolton. Offering driving lessons for learners, intensive courses, DSA Instructor Training, Pass Plus and advanced driving."></siteMapNode>
+                   metaKeywords="" 
+                   metaDescription=""></siteMapNode>
 
       <siteMapNode key="theory-test" url="~/theory.aspx" rewriteToUrl="~/theory.aspx" title="Theory Test" 
                    metaKeywords="" 
@@ -17,19 +17,19 @@
                    metaDescription="##SiteName##"></siteMapNode>
 
       <siteMapNode key="instructor-training" url="~/instructor.aspx" rewriteToUrl="~/instructor.aspx" title="Instructor Training" 
-                   metaKeywords="dsa qualified trainer, become a driving instructor, driving instructor training, become dsa qualified, DSA Instructor Training, bradshaw, harwood, tonge moor, bromley cross, astley bridge, halliwell, breightmet" 
-                   metaDescription="Learn to become a driving instructor from one of the most experienced instructors in Bolton at ##SiteName##. Stephen Haslam DSA approved driving school instructor in Bolton, Bradshaw, Harwood and the surrounding areas."></siteMapNode>
+                   metaKeywords="" 
+                   metaDescription=""></siteMapNode>
 
       <siteMapNode key="contact-me" url="~/contact.aspx" rewriteToUrl="~/contact.aspx" title="Prices" 
-                   metaKeywords="bolton driving school, bolton, special offers, cheap lessons, bulk discounts, bradshaw, harwood, tottington, bromley cross, astley bridge, halliwell, breightmet" 
-                   metaDescription="Call Stephen Haslam DSA approved driving school instructor at ##SiteName## in Bolton. Contact me for my lastest prices, special offer and bulk discounts."></siteMapNode>
+                   metaKeywords="" 
+                   metaDescription=""></siteMapNode>
 
       <siteMapNode key="special-offers" url="~/special.aspx" rewriteToUrl="~/speical.aspx" title="Special Offers" 
                    metaKeywords="" 
                    metaDescription="##SiteName##"></siteMapNode>
 
       <siteMapNode key="news" url="~/news.aspx" rewriteToUrl="~/news.aspx" title="News" 
-                   metaKeywords="bolton driving school, bolton driving lessons, driving school bolton, driving schools, driving instructor, driving lesson, theory test, online driving theory test, learn to drive, pass plus, practical driving test, driving lesson, cheap driving school, become a driving instructor, driving instructor training, bradshaw, harwood, tottington, bromley cross, astley bridge, halliwell, breightmet" 
-                   metaDescription="The latest news from Stephen Haslam DSA approved driving school instructor at ##SiteName##. Offering driving lessons in Bolton and the surrounding areas."></siteMapNode>
+                   metaKeywords="" 
+                   metaDescription=""></siteMapNode>
   </siteMapNode>
 </siteMap>
