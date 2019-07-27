@@ -1,6 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="News.ascx.cs" Inherits="_Templates__UserControls_News" %>
-<%@ Import Namespace="DNAide.Web" %>
-<div class="header_01"><a href="<%= UrlAide.Resolve(SiteMap.Provider.FindSiteMapNodeFromKey("news").Url) %>"><%= UrlAide.Resolve(SiteMap.Provider.FindSiteMapNodeFromKey("news").Title) %></a></div>
+﻿<div class="header_01"><a href="news.html">News</a></div>
                 
 <div class="side_column_content">
 								
@@ -23,7 +21,7 @@
       <p>The Bradshaw School of Motoring website is now live. Have a look round and drop me a message if you have any comments.</p>
   </div>
 					                        
-  <div class="button_01"><a href="<%= UrlAide.Resolve(SiteMap.Provider.FindSiteMapNodeFromKey("news").Url) %>"><%= UrlAide.Resolve(SiteMap.Provider.FindSiteMapNodeFromKey("news").Title) %></a></div>
+  <div class="button_01"><a href="news.html"</a></div>
 </div>
                 
 <div class="margin_bottom_40"></div>
