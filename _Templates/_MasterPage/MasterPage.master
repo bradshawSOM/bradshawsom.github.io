@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Import Namespace="DNAide.Web" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title><%= CurrentSiteMapNode.Title %> | Bradshaw School of Motoring - https://www.bradshawschoolofmotoring.co.uk</title>
+
+<meta name="keywords" content="<%= this.MetaKeywords %>" />
+<meta name="description" content="<%= this.MetaDescription %>" />
+
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico"/>
+
+<asp:ContentPlaceHolder id="cphHead" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+<div id="templateo_container">
+	<div id="templatemo_top_panel">
+    	<!--<div id="site_logo">
+        	<a href="http://www.templatemo.com" target="_parent"><img src="images/templatemo_logo.jpg" alt="Site Title" /></a>   
+                 </div>-->
+		    <!-- OR if you want to use text site title, use below codes -->
+		
+       	<div id="site_title">
+            <div class="fl">
+                <a href="https://www.bradshawschoolofmotoring.co.uk"><img src="images/lplate1.png" alt="Site Title" /></a>
+            </div>  
+            <div class="site_title_text">                
+    		    <a href="http://www.bradshawschoolofmotoring.co.uk">Bradshaw School of Motoring</a>
+              <span><a class="sub" href="mailto:ste@bradshawschoolofmotoring.co.uk">ste@bradshawschoolofmotoring.co.uk</a> - 07970 074 256 / 01204 593 617</span>                
+            </div>
+        </div> 
+		
+        <div id="header_menu_section">
+            <div class="header_menu home_menu">
+            	<a href="https://www.bradshawschoolofmotoring.co.uk"></a>
+            </div>
+            <div class="header_menu contact_menu">
+            	<a href="mailto:ste@bradshawschoolofmotoring.co.uk"></a>
+            </div>
+        </div><!-- end of header mneu section -->
+    
+    	<div class="cleaner"></div>
+    </div> <!-- end of top panel -->
+    
+    <div id="templatemo_menu_banner_panel">
+    
+    	<div id="templatemo_menu_wrapper">
+        	<div id="templatemo_menu">
+                <ul>                    
+                    <li><a href="https://www.bradshawschoolofmotoring.co.uk" class='<%= CurrentSiteMapNode == SiteMap.Provider.FindSiteMapNodeFromKey("home-page") ? "current" : string.Empty %>'><%= SiteMap.Provider.FindSiteMapNodeFromKey("home-page").Title%></a></li>
+                    <li><a href="<%= UrlAide.Resolve(SiteMap.Provider.FindSiteMapNodeFromKey("my-services").Url) %>" class='<%= CurrentSiteMapNode == SiteMap.Provider.FindSiteMapNodeFromKey("my-services") ? "current" : string.Empty %>'><%= SiteMap.Provider.FindSiteMapNodeFromKey("my-services").Title%></a></li>
+                    <li><a href="<%= UrlAide.Resolve(SiteMap.Provider.FindSiteMapNodeFromKey("theory-test").Url) %>" class='<%= CurrentSiteMapNode == SiteMap.Provider.FindSiteMapNodeFromKey("theory-test") ? "current" : string.Empty %>'><%= SiteMap.Provider.FindSiteMapNodeFromKey("theory-test").Title%></a></li>
+                    <li><a href="<%= UrlAide.Resolve(SiteMap.Provider.FindSiteMapNodeFromKey("practical-test").Url) %>" class='<%= CurrentSiteMapNode == SiteMap.Provider.FindSiteMapNodeFromKey("practical-test") ? "current" : string.Empty %>'><%= SiteMap.Provider.FindSiteMapNodeFromKey("practical-test").Title%></a></li>
+                    <li><a href="<%= UrlAide.Resolve(SiteMap.Provider.FindSiteMapNodeFromKey("instructor-training").Url) %>" class='<%= CurrentSiteMapNode == SiteMap.Provider.FindSiteMapNodeFromKey("instructor-training") ? "current" : string.Empty %>'><%= SiteMap.Provider.FindSiteMapNodeFromKey("instructor-training").Title%></a></li>
+                    <li class="last"><a href="<%= UrlAide.Resolve(SiteMap.Provider.FindSiteMapNodeFromKey("contact-me").Url) %>" class='<%= CurrentSiteMapNode == SiteMap.Provider.FindSiteMapNodeFromKey("contact-me") ? "current" : string.Empty %>'><%= SiteMap.Provider.FindSiteMapNodeFromKey("contact-me").Title%></a></li>
+                </ul>    	
+            </div> <!-- end of menu -->        
+        </div> <!-- end of menu wrapper -->
+        
+        <div id="templatemo_banner">
+        
+        	<div class="header_02">Learn to drive with one of the most experienced instructors in Bolton</div>
+            <p>&quot;Embarking on your driving lessons is regarded as one of the most important milestones in your life,
+            learning to drive with me at Bradshaw School of Motoring will make it enjoyable and exciting.&quot;
+            <!-- <a href="#">Read more...</a> -->
+            </p>
+        
+        </div> <!-- end of banner -->
+        
+        <div class="cleaner">&nbsp;</div>    
+    </div> <!-- end of menu & banner panel -->
+    
+    <div id="templatemo_content_wrapper">    	
+        <div id="templatemo_content">
+          <asp:ContentPlaceHolder id="cphBody" runat="server"></asp:ContentPlaceHolder>                    
+          <div class="cleaner"></div>
+        </div> <!-- end of content -->
+    </div> <!-- end of content wrapper -->
+    
+    <div id="templatemo_footer">
+        <p>Driving lessons in Bolton: Bradshaw, Harwood, Bromley Cross, Astley Bridge, Halliwell, Tottington, Breightmet</p>
+        <p>Copyright © <%= DateTime.Now.Year %> <a href="https://www.bradshawschoolofmotoring.co.uk">https://www.bradshawschoolofmotoring.co.uk</a> | Templates by <a href="http://www.templatemo.com" target="_blank">TemplateMo</a></p>        
+    </div> <!-- end of footer -->
+</div> <!-- end of container -->
+
+
+<script type="text/javascript">
+  window.___gcfg = { lang: 'en-GB' };
+
+  (function () {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</body>
+</html>
